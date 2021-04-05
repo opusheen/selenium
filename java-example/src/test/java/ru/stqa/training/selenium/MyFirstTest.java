@@ -8,24 +8,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 
-public class MyFirstTest {
-    private WebDriver wd;
+public class MyFirstTest extends TestBase{
 
-    @Before
-    public void start(){
-        wd = new FirefoxDriver();
-    }
+
     @Test
     public void myFirstTest(){
         wd.get("https://yandex.ru/");
         wd.findElement(By.linkText("Погода")).isDisplayed();
     }
 
-    @After
-    public void stop(){
-        wd.quit();
-        wd = null;
-    }
 
 
 
