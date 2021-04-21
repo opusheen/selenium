@@ -17,24 +17,24 @@ public class CheckAdmin extends TestBase{
     public void testAdminAllPages() throws InterruptedException {
         loginToadmin();
         wd.findElement((By.xpath("//img[@alt='My Store']"))).isDisplayed();
+        Thread.sleep(1000);
         List<WebElement> elements = wd.findElements(By.id("app-"));
-        for (WebElement element: elements) {
+        for (int i = 0; i < elements.size(); i ++) {
             Thread.sleep(500);
-            element.click();
+            wd.findElements(By.id("app-")).get(i).click();
             WebDriverWait wait = new WebDriverWait(wd, 10);
-
             wait.until(ExpectedConditions.visibilityOf(wd.findElement((By.cssSelector("h1")))));
-            List <WebElement> subtitls = element.findElements(By.cssSelector("ul.docs > li"));
-            if (subtitls.size() > 0)
+            List <WebElement> subtitles = wd.findElements(By.cssSelector(".docs li"));
+               if (subtitles.size() > 0)
             {
-                for (WebElement subtitl : subtitls) {
-                    element.click();
+                for (int j = 0; j < subtitles.size(); j ++) {
+                    Thread.sleep(2000);
+                    wd.findElements(By.cssSelector(".docs li")).get(j).click();
                     wait.until(ExpectedConditions.visibilityOf(wd.findElement((By.cssSelector("h1")))));
-
                 }
             }
-        }}
+        }} }
 
 
-}
+
 

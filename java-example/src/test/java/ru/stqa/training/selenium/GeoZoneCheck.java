@@ -1,11 +1,30 @@
 package ru.stqa.training.selenium;
 
+import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
-public class GeoZoneCheck extends TestBase{
-    public void testGeoZones(){
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class GeoZoneCheck extends TestBase {
+    @Test
+    public void testGeoZones() throws InterruptedException {
         loginToadmin();
-        wd.findElement(By.name("Geo Zones")).click();
-        wd.findElement(By.linkText("Canada")).getText();
+        wd.get("http://localhost:8081/litecart/admin/?app=geo_zones&doc=geo_zones");
+
+        Thread.sleep(5000);
+        List<WebElement> countries = new ArrayList<>();
+        List<String> countrynames = new ArrayList<>();
+        countries = wd.findElements(By.className("row"));
+        for (WebElement country : countries) {
+            String countryname = country.findElement(By.cssSelector("td a")).getAttribute("firstChild.data");
+            countrynames.add(countryname);
+
+
+        }
+        System.out.println(countrynames.toString());
     }
 }
+

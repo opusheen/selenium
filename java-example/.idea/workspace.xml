@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13679aa7-f95f-4fa0-b627-a46304411661" name="Default Changelist" comment="login test">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/CheckAdmin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/GeoZoneCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/StickersTest.java" afterDir="false" />
+    <list default="true" id="13679aa7-f95f-4fa0-b627-a46304411661" name="Default Changelist" comment="new tests.. 4.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/CheckAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/CheckAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/GeoZoneCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/GeoZoneCheck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,27 +67,6 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RunManager" selected="JUnit.CheckAdmin.testAdminAllPages">
-    <configuration name="MyFirstTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stqa.training.selenium.MyFirstTest&quot; --stacktrace" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="CheckAdmin.testAdminAllPages" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-example.test" />
       <extension name="coverage">
@@ -102,6 +78,22 @@
       <option name="PACKAGE_NAME" value="ru.stqa.training.selenium" />
       <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.CheckAdmin" />
       <option name="METHOD_NAME" value="testAdminAllPages" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeoZoneCheck.testGeoZones" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-example.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.training.selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.GeoZoneCheck" />
+      <option name="METHOD_NAME" value="testGeoZones" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -157,10 +149,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CheckAdmin.testAdminAllPages" />
+        <item itemvalue="JUnit.GeoZoneCheck.testGeoZones" />
         <item itemvalue="JUnit.StickersTest.testStickers" />
         <item itemvalue="JUnit.MyFirstTest" />
         <item itemvalue="JUnit.LoginTest.myFirstTest" />
-        <item itemvalue="Gradle.MyFirstTest" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617634853070</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="new tests.. 4.1">
+      <created>1619024321784</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1619024321784</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,7 +211,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
     <MESSAGE value="login test" />
-    <option name="LAST_COMMIT_MESSAGE" value="login test" />
+    <MESSAGE value="new tests.. 4.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="new tests.. 4.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -224,6 +224,22 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/GeoZoneCheck.java</url>
+          <line>12</line>
+          <properties class="ru.stqa.training.selenium.GeoZoneCheck" method="testGeoZones">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/CheckAdmin.java</url>
+          <line>16</line>
+          <properties class="ru.stqa.training.selenium.CheckAdmin" method="testAdminAllPages">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
