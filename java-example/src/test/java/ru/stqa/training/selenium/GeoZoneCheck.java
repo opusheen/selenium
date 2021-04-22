@@ -21,7 +21,7 @@ public class GeoZoneCheck extends TestBase {
 
     @Test
     public void testCountries() throws InterruptedException {
-        wd.get("http://localhost/litecart/admin/?app=countries&doc=countries");
+        wd.get("http://localhost:8081/litecart/admin/?app=countries&doc=countries");
         Thread.sleep(1000);
         int counter = wd.findElements(By.cssSelector("td:nth-child(5)")).size();
         List countryNames = new ArrayList();
@@ -29,16 +29,18 @@ public class GeoZoneCheck extends TestBase {
         for (int i = 0; i < counter;  i ++) {
             String countryName = wd.findElements(By.cssSelector("td:nth-child(5)")).get(i).getAttribute("outerText");
             countryNames.add(countryName);
-            int zonesQuantity = wd.findElements(By.cssSelector(".td:nth-child(6)")).size();
-            if (zonesQuantity > 0) {
 
-                wd.findElements(By.cssSelector("td:nth-child(5)")).get(i).click();
+            if (! wd.findElements(By.cssSelector("td:nth-child(6)")).get(i).getText().equals("0")) {
+
+                wd.findElements(By.cssSelector((" td:nth-child(5) > a"))).get(i).click();
                 Thread.sleep(500);
                 int counter2 = wd.findElements(By.cssSelector("td:nth-child(3) > input[type=hidden]")).size();
                 for (int j = 0; j<counter2; j++) {
                     String zoneName = wd.findElements(By.cssSelector("td:nth-child(3) > input[type=hidden]")).get(j).getAttribute("outerText");
                     zoneNames.add(zoneName);
+
                 }
+                wd.get("http://localhost:8081/litecart/admin/?app=countries&doc=countries");
             }
         }
 

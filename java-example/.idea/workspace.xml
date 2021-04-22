@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13679aa7-f95f-4fa0-b627-a46304411661" name="Default Changelist" comment="new tests.. adminka check">
+    <list default="true" id="13679aa7-f95f-4fa0-b627-a46304411661" name="Default Changelist" comment="new tests.. sorting of countries">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/GeoZoneCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/GeoZoneCheck.java" afterDir="false" />
     </list>
@@ -65,7 +65,7 @@
     <property name="project.structure.side.proportion" value="0.33103448" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager" selected="JUnit.GeoZoneCheck.testGeoZones">
+  <component name="RunManager" selected="JUnit.GeoZoneCheck.testCountries">
     <configuration name="CheckAdmin.testAdminAllPages" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-example.test" />
       <extension name="coverage">
@@ -147,8 +147,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GeoZoneCheck.testGeoZones" />
         <item itemvalue="JUnit.GeoZoneCheck.testCountries" />
+        <item itemvalue="JUnit.GeoZoneCheck.testGeoZones" />
         <item itemvalue="JUnit.CheckAdmin.testAdminAllPages" />
         <item itemvalue="JUnit.StickersTest.testStickers" />
         <item itemvalue="JUnit.MyFirstTest" />
@@ -199,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619041230379</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="new tests.. sorting of countries">
+      <created>1619125957044</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1619125957044</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,7 +226,8 @@
     <MESSAGE value="login test" />
     <MESSAGE value="new tests.. 4.1" />
     <MESSAGE value="new tests.. adminka check" />
-    <option name="LAST_COMMIT_MESSAGE" value="new tests.. adminka check" />
+    <MESSAGE value="new tests.. sorting of countries" />
+    <option name="LAST_COMMIT_MESSAGE" value="new tests.. sorting of countries" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
