@@ -66,10 +66,8 @@ public class GeoZoneCheck extends TestBase {
         for (int i = 0; i < counter;  i ++) {
             wd.findElements(By.cssSelector("td:nth-child(3) > a")).get(i).click();
             Thread.sleep(500);
-            int counter2 = wd.findElements(By.cssSelector("td:nth-child(3)  select")).size();
-            for ( int j = 0; j < counter2; j++ ) {
-                String zoneName = wd.findElements(By.cssSelector("td:nth-child(3)  select")).get(j).getText();
-                zoneNames.add(zoneName);
+            for (WebElement element : wd.findElements(By.cssSelector("td:nth-child(3) > select [selected= \"selected\"]"))) {
+                zoneNames.add(element.getAttribute("outerText"));
             }
             List sortedList = new ArrayList<>();
             sortedList = zoneNames;
