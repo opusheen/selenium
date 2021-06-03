@@ -6,8 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
+
 
 public class TestBase {
     public WebDriver wd;
@@ -40,5 +39,17 @@ public class TestBase {
         wd.findElement(By.name("password")).clear();
         wd.findElement(By.name("password")).sendKeys("admin");
         wd.findElement(By.name("login")).click();
+    }
+
+
+    protected void type(By locator, String text) {
+        wd.findElement(locator).click();
+        if (text != null) {
+            String existingText = wd.findElement(locator).getAttribute("value");
+            if (!text.equals(existingText)) {
+                wd.findElement(locator).clear();
+                wd.findElement(locator).sendKeys(text);
+            }
+        }
     }
 }
