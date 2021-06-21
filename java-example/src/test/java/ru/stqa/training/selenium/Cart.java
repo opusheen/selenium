@@ -11,8 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import static org.openqa.selenium.support.ui.ExpectedConditions.textToBe;
-import static org.openqa.selenium.support.ui.ExpectedConditions.textToBePresentInElementLocated;
+import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 public class Cart extends TestBase{
 
@@ -37,12 +36,20 @@ public class Cart extends TestBase{
             wd.findElement(By.linkText("Home")).click();
         }
         wd.findElement(By.linkText("Checkout »")).click();
-        // корзина  на что обратить внимание?
+        //
         Thread.sleep(1000);
         int count = wd.findElements(By.cssSelector((".dataTable .item"))).size();
         try{
-            wd.findElement(By.cssSelector(".inact act")).click();}
-        catch (NoSuchElementException e){wd.findElement(By.cssSelector(".shortcut a")).click();}
+            WebElement inact = wd.findElement(By.cssSelector(".inact act"));
+            inact.click();
+            WebDriverWait wait = new WebDriverWait(wd, 5);
+            wait.until(stalenessOf(inact));}
+        catch (NoSuchElementException e){
+            WebElement shortcut = wd.findElement(By.cssSelector(".shortcut a"));
+            shortcut.click();
+            WebDriverWait wait = new WebDriverWait(wd, 5);
+            wait.until(stalenessOf(shortcut));
+        }
         while (count > 1) {
             wd.findElement(By.name("remove_cart_item")).click();
             WebDriverWait wait = new WebDriverWait(wd, 5);
