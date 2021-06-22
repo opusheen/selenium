@@ -1,6 +1,8 @@
 package ru.stqa.training.selenium;
 
-import org.junit.jupiter.api.Test;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.logging.LogEntry;
@@ -10,6 +12,11 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 
 public class CheckLogMessage extends TestBase {
+    @Before
+    public void prepareToTes() {
+        loginToadmin();
+        WebDriverManager.firefoxdriver().setup();
+    }
 
     @Test
     public void testConsole() throws InterruptedException {
@@ -26,6 +33,7 @@ public class CheckLogMessage extends TestBase {
             wd.findElements(By.cssSelector(".row td img + a")).get(i).click();
             System.out.println(i);
             wd.navigate().back();
+
             for (LogEntry l : wd.manage().logs().get("browser").getAll()) {
                 System.out.println(l);
                 assertTrue(l == null);

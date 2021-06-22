@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13679aa7-f95f-4fa0-b627-a46304411661" name="Default Changelist" comment="blank link task">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/CheckLogMessage.java" afterDir="false" />
+    <list default="true" id="13679aa7-f95f-4fa0-b627-a46304411661" name="Default Changelist" comment="17 task">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/CheckLogMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/CheckLogMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,38 +85,7 @@
       <recent name="ru.stqa.training.selenium" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OpenLinks">
-    <configuration name="AddItem.testAddItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java-example.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.training.selenium.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.AddItem" />
-      <option name="METHOD_NAME" value="testAddItem" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Cart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java-example.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.training.selenium.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.Cart" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.CheckLogMessage">
     <configuration name="Cart.testWorkWithCart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-example.test" />
       <extension name="coverage">
@@ -127,6 +97,37 @@
       <option name="PACKAGE_NAME" value="ru.stqa.training.selenium" />
       <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.Cart" />
       <option name="METHOD_NAME" value="testWorkWithCart" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckLogMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-example.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.training.selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.CheckLogMessage" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckLogMessage.testConsole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-example.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.training.selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.training.selenium" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.CheckLogMessage" />
+      <option name="METHOD_NAME" value="testConsole" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,7 +148,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OpenLinks.testLinksAreOpened" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StickersTest.testStickers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-example.test" />
       <extension name="coverage">
         <pattern>
@@ -156,8 +157,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.stqa.training.selenium" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.OpenLinks" />
-      <option name="METHOD_NAME" value="testLinksAreOpened" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.training.selenium.StickersTest" />
+      <option name="METHOD_NAME" value="testStickers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -165,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CheckLogMessage" />
+        <item itemvalue="JUnit.CheckLogMessage.testConsole" />
+        <item itemvalue="JUnit.StickersTest.testStickers" />
         <item itemvalue="JUnit.OpenLinks" />
         <item itemvalue="JUnit.Cart.testWorkWithCart" />
-        <item itemvalue="JUnit.Cart" />
-        <item itemvalue="JUnit.OpenLinks.testLinksAreOpened" />
-        <item itemvalue="JUnit.AddItem.testAddItem" />
       </list>
     </recent_temporary>
   </component>
@@ -266,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624290218200</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="17 task">
+      <created>1624394648513</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1624394648513</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -293,7 +301,8 @@
     <MESSAGE value="11 and 12 tasks" />
     <MESSAGE value="13 task" />
     <MESSAGE value="blank link task" />
-    <option name="LAST_COMMIT_MESSAGE" value="blank link task" />
+    <MESSAGE value="17 task" />
+    <option name="LAST_COMMIT_MESSAGE" value="17 task" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

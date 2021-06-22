@@ -13,8 +13,8 @@ public class TestBase {
     public WebDriver wd;
     @Before
     public void start(){
-        wd = new FirefoxDriver();
-      //  wd = new ChromeDriver();
+     //   wd = new FirefoxDriver();
+        wd = new ChromeDriver();
   //      wd = new InternetExplorerDriver();
     }
     @After
